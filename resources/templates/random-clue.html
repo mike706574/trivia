@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia - Random Clue</title>
+    <meta name="description" content="Random clue page">
+    <meta name="author" content="mike706574">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <script>
+      function showAnswer() {
+        document.getElementById("answer").removeAttribute("hidden");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column" style="margin-top: 10%">
+          <h1>Random Clue</h1>
+          <button onClick="location.reload()">Another</button>
+          <h2>{{category}} for {{value}}</h2>
+          <p id="question">{{question}}</p>
+          <button onClick="showAnswer()" type="button">Show Answer</button>
+          <p id="answer" hidden>{{answer}}</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Trivia",
+  "description": "Some trivia stuff in Clojure/Script",
+  "image": "heroku/clojure",
+  "addons": [ "heroku-postgresql" ]
+}
